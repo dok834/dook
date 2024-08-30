@@ -1,0 +1,89 @@
+.nn{
+    margin-top: 200px;
+    &__content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 200px;
+        gap: 80px;
+        position: relative;
+    }
+    &__img{
+        width: 399px;
+        height: 492px;
+    }
+    &__descr{
+        font-family: var(--third-family);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 214%;
+        letter-spacing: 0.01em;
+        color: rgba(255, 255, 255, 0.78);
+        margin-bottom: 65px;
+    }
+}
+.name{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    border-radius: 8px;
+    top:372px;
+    left: 350px;
+    width: 265px;
+    height: 91px;
+    backdrop-filter: blur(50px);
+    background: rgba(40, 48, 54, 0.2);
+    &__item{
+        margin-left: 23px;
+        margin-top: 10px;
+        background: none;
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 26px;
+        letter-spacing: 0.01em;
+        color: rgba(255, 253, 253, 0.78);
+    }
+    &__descr{
+        margin-left: 23px;
+        margin-top: 2px;
+        background: none;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        color: rgba(255, 253, 253, 0.55);
+        margin-bottom: 16px;
+    }
+    &__img{
+        position: absolute;
+        font-family: var(--second-family);
+        font-weight: 500;
+        font-size: 250px;
+        background: linear-gradient(235deg, rgba(252, 252, 252, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transform: rotate(-5deg);
+        bottom: 318px;
+        right: 495px;
+    }
+}
+@media(max-width:1250px){
+    .name__img{
+        display: none;
+    }
+}
+@media(max-width:840px){
+    .nn__content{
+        display: flex;
+        flex-direction: column;
+    }
+    .name{
+        display: none;
+    }
+    .nn__img{
+        width: 300px;
+        height: 400px;
+    }
+}

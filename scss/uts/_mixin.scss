@@ -1,0 +1,5 @@
+@mixin font($w, $s){
+    font-family: var(--font-family);
+    font-weight: $w;
+    font-size: $s;
+}
